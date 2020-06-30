@@ -38,13 +38,13 @@ class Odometer extends React.Component {
   constructor() {
     super();
     this.state = {
-      count : 0,
+      count : "0".padStart(4, 0),
     }
   }
 
   increaseCount(value) {
 
-    let current = this.state.count;
+    let current = parseInt(this.state.count);
     let tempState = 0;
 
     if ((current + value) > 9999) {
@@ -52,19 +52,12 @@ class Odometer extends React.Component {
     } else {
       tempState = (current + value)
     }
+
     
     this.setState({
-      count : tempState,
+      count : String(tempState).padStart(4, 0),
     })
   }
-
-  // padNum(num) {
-  //   let tempNum = '';
-  //   if (num < 10) {
-  //     tempNum = num.toString().padStart(4, 0)
-  //   }
-  //   return parseInt(tempNum)
-  // }
 
   render() {
     return (

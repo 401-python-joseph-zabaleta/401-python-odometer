@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lab: Class 37: React 1
 
-## Available Scripts
+## Open Git Pull Requests  
+ 
+[https://github.com/joseph-zabaleta/odometer/pull/1](https://github.com/joseph-zabaleta/odometer/pull/1)  
 
-In the project directory, you can run:
+## Overview  
 
-### `npm start`
+Create an Odometer web page using ReactJS.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Feature Tasks and Requirements  
+- [x] Display an odometer with 4 digits
+    - Pad with zeroes as needed (e.g. 0045)
+        - JavaScript has a method for this. Research as needed.
+- [x] Add buttons to increment the “miles” by 1, 10, 100 and 1000.
+    - Roll over when odometer value exceeds 9999
+    - Maintain any “extra” amount when rolling over.
+- [x] The root `App` component should contain `Odometer`,`Header` and `Footer` components.
+    - You decide when appropriate to use class based or functional components.
+    - [x] `Header` component should receive a text value via props.
+    - [x] `Footer` component should receive a trademark value via props.
+    - [x] `Odometer` component should store numeric value in it’s state.
+        - Remember to update state in the React way.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Implementation Notes:  
+Useful Terminal Commands
+- `npx create-react-app odometer`  
 
-### `npm test`
+Review the instructions provided with ReactApp:  
+- [Instructions MD File](/instructions.md)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Acceptance Tests  
+- [x] No testing required.  
 
-### `npm run build`
+## Dependencies  
+- "@testing-library/jest-dom": "^4.2.4",
+- "@testing-library/react": "^9.5.0",
+- "@testing-library/user-event": "^7.2.1",
+- "react": "^16.13.1",
+- "react-dom": "^16.13.1",
+- "react-scripts": "3.4.1"
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Authors  
+- Software Developer: Joseph Zabaleta
+  - [Official Github](https://github.com/joseph-zabaleta)  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Collaborations  
+- none  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License  
+This project is under the MIT License.
 
-### `npm run eject`
+## Acknowledgements / Resources  
+- none
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Version History  
+- 1.0.0 20200630  
+    - Initial files created.  

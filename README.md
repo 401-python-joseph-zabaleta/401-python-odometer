@@ -2,6 +2,7 @@
 
 ## Open Git Pull Requests  
  
+[https://github.com/joseph-zabaleta/odometer/pull/1](https://github.com/joseph-zabaleta/odometer/pull/1)  
 
 ## Overview  
 
@@ -24,6 +25,9 @@ Create an Odometer web page using ReactJS.
 ## Implementation Notes:  
 Useful Terminal Commands
 - `npx create-react-app odometer`  
+
+Review the instructions provided with ReactApp:  
+- [Instructions MD File](/instructions.md)
 
 ## User Acceptance Tests  
 - [x] No testing required.  
